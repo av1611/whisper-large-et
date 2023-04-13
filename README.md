@@ -19,10 +19,10 @@ model-index:
     metrics:
     - name: Test WER
       type: wer
-      value: 14.66
+      value: 11.99
     - name: Test CER
       type: cer
-      value: 3.76
+      value: 3.21
   - task:
       name: Automatic Speech Recognition
       type: automatic-speech-recognition
@@ -34,10 +34,10 @@ model-index:
     metrics:
     - name: Test WER
       type: wer
-      value: 13.793
+      value: 11.22
     - name: Test CER
       type: cer
-      value: 3.194
+      value: 2.813
 ---
 
 
@@ -95,5 +95,5 @@ WER results below are obtained using greedy decoding (i.e., beam size 1).
 
 |Dataset | WER |
 |---|---|
-| Common Voice 8.0 | 13.8 |
-| Common Voice 11.0 | 14.7 |
+| Common Voice 8.0 | 11.2 |
+| Common Voice 11.0 | 12.0 |
