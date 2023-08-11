@@ -2,10 +2,10 @@ from pydub import AudioSegment
 import os
 
 # Path to the input audio file (2-hour long)
-input_audio_path = "/Users/avgr/Oleviste_koguduse_jumalateenistus_30_juuli_2023_kell_12_00.mp3"
+input_audio_path = "/Users/avgr/Downloads/Nomme_2023_07_02.mp3"
 
 # Output directory to save the chunks
-output_directory = "/Users/avgr/ole/"
+output_directory = "/Users/avgr/nomme/"
 os.makedirs(output_directory, exist_ok=True)
 
 # Load the input audio

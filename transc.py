@@ -6,10 +6,10 @@ import os
 whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
 
 # Path to the directory containing MP3 files
-audio_dir = "/Users/avgr/ole/output_chunks"
+audio_dir = "/Users/avgr/nomme/output_chunks"
 
 # Output file to save transcribed text
-output_text_file = "/Users/avgr/ole/ole_transcribed.txt"
+output_text_file = "/Users/avgr/nomme/nomme_20230702_transcribed.txt"
 
 def extract_number(filename):
     return int(filename.split("_")[1].split(".")[0])
@@ -27,7 +27,9 @@ with open(output_text_file, "w") as output_file:
             transcription = whisper_pipeline(mp3_path)
             transcribed_text = transcription['text']
 
-            print(transcribed_text)
+            print("\n" + mp3_file + "\n")
+
+            print("\n" + transcribed_text  + "\n")
 
             # Write transcribed text to the output file with a line break separator
             output_file.write(transcribed_text + "\n" + "\n")
