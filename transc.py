@@ -3,13 +3,14 @@ import os
 
 # Initialize the Whisper pipeline with your custom model
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="path_to_your_custom_model")
-whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
-
+# whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
+# whisper_pipeline = pipeline("automatic-speech-recognition", model="arampacha/whisper-large-uk-2")
+whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/whisper-small-ukrainian")
 # Path to the directory containing MP3 files
-audio_dir = "/Users/avgr/nomme/output_chunks"
+audio_dir = "output_chunks"
 
 # Output file to save transcribed text
-output_text_file = "/Users/avgr/nomme/nomme_20230702_transcribed.txt"
+output_text_file = "raguli.txt"
 
 def extract_number(filename):
     return int(filename.split("_")[1].split(".")[0])
