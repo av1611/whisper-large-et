@@ -8,7 +8,7 @@ import os
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="arampacha/whisper-large-uk-2")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/whisper-small-ukrainian")
 whisper_pipeline = pipeline("automatic-speech-recognition",
-    model="Yehor/wav2vec2-xls-r-1b-uk-with-lm")
+    model="arampacha/whisper-large-uk-2")
 
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
@@ -30,9 +30,9 @@ whisper_pipeline = pipeline("automatic-speech-recognition",
 # Yehor/wav2vec2-xls-r-300m-uk-with-3gram-news-lm # 2h processed in 25 min
 # Yehor/wav2vec2-xls-r-300m-uk-traced-jit # err, faild downld
 
-# Yehor/wav2vec2-xls-r-1b-uk-with-lm # OK
-# Yehor/wav2vec2-xls-r-1b-uk-with-news-lm
-# Yehor/wav2vec2-xls-r-1b-uk-with-binary-news-lm
+# Yehor/wav2vec2-xls-r-1b-uk-with-lm # 2h processed in 55 min
+# Yehor/wav2vec2-xls-r-1b-uk-with-news-lm # too long, not compltd
+# Yehor/wav2vec2-xls-r-1b-uk-with-binary-news-lm 2h processed in 60 min
 
 # Yehor/whisper-small-ukrainian
 
@@ -68,3 +68,6 @@ with open(output_text_file, "w") as output_file:
             output_file.write(transcribed_text + "\n" + "\n")
 
 print("Transcription complete. Output saved to", output_text_file)
+
+
+
