@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# input_file="/Users/avgr/Downloads/raadiokantsel_183_Koigi_murede_heitmine_Jumalale.mp3"    # Replace with your input MP3 file
-input_file="/Users/avgr/Downloads/raguli.mp3"    # Replace with your input MP3 file
-output_format="raguli_%04d.mp3"
+# input_file="/Users/avgr/Downloads/radiorip.mp3"    # Replace with your input MP3 file
+input_file="/Users/avgr/Downloads/radiorip.mp3"    # Replace with your input MP3 file
+output_format="radiorip_%04d.mp3"
 chunk_duration=20         # Duration of each chunk in seconds
 
 # Create output directory if it doesn't exist

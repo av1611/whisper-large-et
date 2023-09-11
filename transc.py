@@ -4,11 +4,17 @@ import os
 
 # Initialize the Whisper pipeline with your custom model
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="path_to_your_custom_model")
-# whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
+whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="arampacha/whisper-large-uk-2")
-# whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/whisper-small-ukrainian")
-whisper_pipeline = pipeline("automatic-speech-recognition",
-    model="arampacha/whisper-large-uk-2")
+# whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-3gram-news-lm")
+# whisper_pipeline = pipeline("automatic-speech-recognition",
+#                             model="arampacha/whisper-large-uk-2")
+
+
+# meta-llama/Llama-2-7b
+# arampacha/whisper-large-uk-2
+# TeraSpace/whisper-medium-russian
+# openai/whisper-large-v2
 
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
@@ -34,7 +40,7 @@ whisper_pipeline = pipeline("automatic-speech-recognition",
 # Yehor/wav2vec2-xls-r-1b-uk-with-news-lm # too long, not compltd
 # Yehor/wav2vec2-xls-r-1b-uk-with-binary-news-lm 2h processed in 60 min
 
-# Yehor/whisper-small-ukrainian
+# Yehor/whisper-small-ukrainian\
 
 # Yehor/kenlm-ukrainian
 # Yehor/indonesian-kenlm-newspapers
@@ -42,7 +48,8 @@ whisper_pipeline = pipeline("automatic-speech-recognition",
 audio_dir = "output_chunks"
 
 # Output file to save transcribed text
-output_text_file = "raguli.txt"
+output_text_file = "radiorip.txt"
+
 
 def extract_number(filename):
     return int(filename.split("_")[1].split(".")[0])
