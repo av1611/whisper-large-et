@@ -4,7 +4,7 @@ import os
 
 # Initialize the Whisper pipeline with your custom model
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="path_to_your_custom_model")
-whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
+# whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/whisper-large-et")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="arampacha/whisper-large-uk-2")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-3gram-news-lm")
 # whisper_pipeline = pipeline("automatic-speech-recognition",
@@ -16,9 +16,6 @@ whisper_pipeline = pipeline("automatic-speech-recognition", model="TalTechNLP/wh
 # TeraSpace/whisper-medium-russian
 # openai/whisper-large-v2
 
-# whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
-# whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
-# whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="Yehor/wav2vec2-xls-r-300m-uk-with-news-lm")
 
 # Yehor/bn-base # retnd error on the 1st run, mbpi, m1
