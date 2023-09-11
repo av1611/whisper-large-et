@@ -1,5 +1,3 @@
----
-license: cc-by-4.0
 tags:
 - audio
 - automatic-speech-recognition
